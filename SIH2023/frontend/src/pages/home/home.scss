@@ -1,0 +1,53 @@
+.home {
+  display: flex;
+}
+
+.homeContainer {
+  flex: 6;
+  // padding-left: 10px;
+}
+
+.widgets,
+.charts {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap onto the next line */
+  gap: 20px;
+}
+
+/* Ensure each box has equal width */
+.widgets > * {
+  flex: 1 0 calc(20% - 20px); /* Maximum of 5 widgets per row */
+  /* 20% width for each widget with a 20px gap in between */
+  margin-bottom: 20px; /* Add some space at the bottom */
+  max-width: calc(20% - 20px); /* Prevents width from growing in smaller containers */
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.charts {
+  padding: 5px 20px;
+}
+
+.listContainer {
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 20px;
+  margin: 20px;
+}
+
+.listTitle {
+  padding-top: 30px;
+  padding-left: 30px;
+  font-weight: 500;
+  color: gray;
+  margin-bottom: 15px;
+}
+.mapContainer {
+  width: 80%;
+  height: 400px;
+  /* Add other styles for the container */
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
