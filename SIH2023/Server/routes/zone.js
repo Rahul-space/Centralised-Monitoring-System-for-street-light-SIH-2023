@@ -3,9 +3,9 @@ const router = express.Router();
 const zone = require("../models/Zone.js");
 const user = require("../models/User.js");
 
-const accountSid = 'AC24ecde671511039f551a32690cdeef3b';
-const authToken = '46be0b7f5a5cd492a57aafc7a6f42a28';
-const twilioPhoneNumber = '+17653144295';
+const accountSid = 'your sid';
+const authToken = 'your auth token';
+const twilioPhoneNumber = 'your provided no with country code';
 
 const client = require('twilio')(accountSid, authToken);
 
