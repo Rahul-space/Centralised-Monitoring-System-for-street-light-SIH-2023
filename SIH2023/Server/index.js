@@ -20,7 +20,7 @@ app.use(cors({
 
 
 mongoose
-  .connect("mongodb+srv://rmdec:rmdec@sih2023.0ka057d.mongodb.net/?retryWrites=true&w=majority", {
+  .connect("connection url provided by mongodb", {
   })
   .then(() => console.log("DB Connection Successfull"))
   .catch((err) => {
